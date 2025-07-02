@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>HackYourCity</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+
+<body>
+    <!-- <h1>HackYourCity</h1>
+    <div class="header"> -->
+        <!-- <img height="200px" width="200px"
+            src="https://plum-lunar-server.figma.site/_assets/v9/30ca89838aacef8bff03e2f6795db2b153b180f7.png?w=1024"
+            alt="ntg"> -->
+        <!-- <p class="quote">"Fixing cities, one issue at a time."</p>
+    </div> -->
+    <!-- Header Navbar -->
+    <div class="navbar">
+        <img src="https://plum-lunar-server.figma.site/_assets/v9/30ca89838aacef8bff03e2f6795db2b153b180f7.png?w=1024"
+            alt="Logo" id="logo" />
+        <h1>HackYourCity</h1>
+        <p class="quote">"Fixing cities, one issue at a time."</p>
+    </div>
+
+    <div id="map"></div>
+    <form id="issueForm">
+        <select id="type">
+            <option value="Garbage">Garbage</option>
+            <option value="Pothole">Pothole</option>
+            <option value="Water Issue">Water Issue</option>
+        </select>
+        <input type="text" id="description" placeholder="Describe the issue" required />
+        <button type="submit">Submit Report</button>
+        <button type="button" id="resetBtn">Reset</button>
+    </form>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+<!-- mkdir HackYourCity
+cd HackYourCity
+mkdir backend
+cd backend
+npm init -y
+npm install express mongoose cors dotenv -->

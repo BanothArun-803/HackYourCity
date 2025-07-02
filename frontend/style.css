@@ -1,0 +1,143 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+/* hover effects */
+input, select {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:hover, select:hover {
+  border-color: #4CAF50;
+}
+
+
+button:hover {
+  background-color: #388E3C;
+   transform: scale(1.05);
+}
+
+/* leaflet */
+.leaflet-popup-content-wrapper {
+  background-color: #f9f9f9;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+}
+.leaflet-popup-content {
+  padding: 10px;
+}
+
+
+/* Header layout */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+/* Logo on the left */
+.logo-left img {
+  width: 60px;
+  height: auto;
+}
+
+/* Title and quote centered */
+.title-center {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.title-center h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.title-center .quote {
+  font-style: italic;
+  color: #666;
+  margin-top: 4px;
+}
+
+/* Center and resize map */
+#map {
+  height: 450px;
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+form select, form input, form button {
+  margin: 8px;
+  padding: 10px;
+  width: 60%;
+  max-width: 500px;
+  border-radius: 6px;
+}
+
+/* Reset button color */
+#resetBtn {
+  background-color: #ec3022;
+  color: white;
+}
+
+#resetBtn:hover {
+  background-color: #c62b2b;
+}
+
+/* ✅ Navbar-style Header */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  background-color: #050505;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Logo small and aligned */
+#logo {
+  height: 70px;
+  width: auto;
+  margin-right: 15px;
+}
+
+/* Title in center */
+.navbar h1 {
+  font-size: 20px;
+  margin: 0;
+  flex-grow: 1;
+  text-align: center;
+  color: white;
+}
+
+/* Quote on the right */
+.navbar .quote {
+  font-size: 14px;
+  color: #fcf7f7;
+  margin: 0;
+  font-style: italic;
+  white-space: nowrap;
+}
